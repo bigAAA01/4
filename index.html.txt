@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 36px;
+            color: #5c5c5c;
+        }
+        .slider {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .services, .reviews, .pricing {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .services h2, .reviews h2, .pricing h2 {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .service-item, .review-item {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+        .service-item img, .review-item img {
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .pricing table {
+            margin: 0 auto;
+            width: 80%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .pricing th, .pricing td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .pricing th {
+            background-color: #f8f8f8;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        footer .social-icons a:hover {
+            color: #f5a623;
+        }
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #f5a623;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #f58600;
+        }
+        .animated {
+            animation: fadeInUp 1s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Beauty Studio</h1>
+    <div class="slider">
+        <!-- Replace with real images from your studio -->
+        <div><img src="https://via.placeholder.com/1200x400/ff7f7f/333333?text=Beauty+Studio+1" alt="Beauty Studio"></div>
+        <div><img src="https://via.placeholder.com/1200x400/7f7fff/333333?text=Beauty+Studio+2" alt="Beauty Studio"></div>
+        <div><img src="https://via.placeholder.com/1200x400/7fff7f/333333?text=Beauty+Studio+3" alt="Beauty Studio"></div>
+    </div>
+</header>
+
+<div class="services animated">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <!-- Replace with actual service images -->
+        <img src="https://via.placeholder.com/300x200/ff7f7f/ffffff?text=Service+1" alt="Service 1">
+        <p>Facial Treatment</p>
+        <p>$50</p>
+    </div>
+    <div class="service-item">
+        <img src="https://via.placeholder.com/300x200/7f7fff/ffffff?text=Service+2" alt="Service 2">
+        <p>Massage</p>
+        <p>$70</p>
+    </div>
+    <div class="service-item">
+        <img src="https://via.placeholder.com/300x200/7fff7f/ffffff?text=Service+3" alt="Service 3">
+        <p>Pedicure</p>
+        <p>$40</p>
+    </div>
+</div>
+
+<div class="pricing animated">
+    <h2>Our Pricing</h2>
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Facial Treatment</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td>Massage</td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td>Pedicure</td>
+            <td>$40</td>
+        </tr>
+    </table>
+</div>
+
+<div class="reviews animated">
+    <h2>What Our Clients Say</h2>
+    <div class="review-item">
+        <!-- Replace with client photos -->
+        <img src="https://via.placeholder.com/150/7f7fff/ffffff?text=Client+1" alt="Client 1">
+        <p>"Amazing service! Highly recommend!"</p>
+        <p>- Emily</p>
+    </div>
+    <div class="review-item">
+        <img src="https://via.placeholder.com/150/ff7f7f/ffffff?text=Client+2" alt="Client 2">
+        <p>"Best massage ever! I'll be back!"</p>
+        <p>- Anna</p>
+    </div>
+    <div class="review-item">
+        <img src="https://via.placeholder.com/150/7fff7f/ffffff?text=Client+3" alt="Client 3">
+        <p>"Wonderful experience! Loved the facial treatment."</p>
+        <p>- Sophia</p>
+    </div>
+</div>
+
+<div class="contact-form animated">
+    <h2>Book an Appointment</h2>
+    <form action="#">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <select name="queryType" required>
+            <option value="appointment">Appointment</option>
+            <option value="question">Question</option>
+        </select>
+        <div id="appointmentFields" style="display:none;">
+            <input type="text" name="service" placeholder="Service" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+        </div>
+        <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>Call Us: +1234567890</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            dots: true,
+            arrows: false
+        });
+        
+        $('select[name="queryType"]').change(function() {
+            if ($(this).val() == 'appointment') {
+                $('#appointmentFields').show();
+            } else {
+                $('#appointmentFields').hide();
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
